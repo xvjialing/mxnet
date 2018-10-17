@@ -5,4 +5,6 @@ FROM ubuntu:14.04
 RUN apt-get update && apt-get install -y \
     build-essential git libatlas-base-dev libopencv-dev python-opencv \
     libcurl4-openssl-dev libgtest-dev cmake wget unzip
+    
+RUN git clone --recursive https://github.com/dmlc/mxnet
 
